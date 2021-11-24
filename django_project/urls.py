@@ -18,6 +18,7 @@ from django.urls import include, path
 from tutorials import views
 
 urlpatterns = [
+    path('', views.names_list),
     path('tutorials/', include('tutorials.urls')),
     path('admin/', admin.site.urls),
     path('<name>/', views.index_name),
