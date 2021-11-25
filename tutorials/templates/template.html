@@ -1,0 +1,9 @@
+{% if all_names_list %}
+    <ul>
+    {% for name in all_names_list %}
+        <li><a href="/tutorials/{{ name.id }}/">{{ name.input_name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No names are available.</p>
+{% endif %}
